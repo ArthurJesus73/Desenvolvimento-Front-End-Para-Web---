@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    background-color: #8B4513;
+    color: white;
+    width: 550px;
+    border-radius: 50px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: right;
+    
+}
+
+input, select, textarea {
+    width: 400px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: wheat;
+}
+
+input, select {
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid;
+}
+
+textarea {
+    height: 50px;
+    border-radius: 5px;
+}
+
+p {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 90px;
+}

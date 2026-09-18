@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Div's no HTML com o css</title>
+    <style type="text/css">
+        
+        body {
+            background-color: bisque;
+        }
+
+        p {
+            color: blue;
+        }
+        
+        div > p {
+
+            color: red
+
+        }
+
+        div > span {
+
+            color: brown;
+        }
+
+    </style>
+    </head>
+    <body>
+
+        <h1>Estilos hierarquicos</h1>
+
+        <div>
+            
+        <p>Paragrafo que é filho direto da div alterado com o estilo hierarquico.</p>
+        <span><p>Paragrafo que não é filho direto da div não é alterado com o estilo div</p></span>
+        
+        </div>
+
+        <div>
+
+            <span>Span que é filho direto da div com o estilo hhierarquico div span.</span>
+            <p><span>Span que não é filho direto da div alterado com o estilo hierarquico div span.</span></p>
+
+        </div>
+
+    </body>
+</html>
