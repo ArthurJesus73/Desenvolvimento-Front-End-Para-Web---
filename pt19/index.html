@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var: Bloco, redeclaração e alteração</title>
+</head>
+<body>
+    <script>
+        var valor = 1;
+        var valor = 2; //redeclaração permitida.
+        if (true) {
+            var dentro = 3; //continua acessivel fora desse bloco
+        }
+        valor = 4; // O valor pode ser reatribuido.
+        console.log(valor, dentro); //4 e 3.
+    </script>
+</body>
+</html>

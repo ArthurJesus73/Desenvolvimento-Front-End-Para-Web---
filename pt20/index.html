@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let: escopo de bloco e alteração</title>
+</head>
+<body>
+    <script>
+        let valor = 1;
+        valor = 2; //Reatribuição permitida.
+        {
+            let local = 3;
+            console.log(local); //3: Acessod entro do bloco.
+        }
+        console.log(valor); //2.
+        //console.log(local); //Fora do bloco, provocaria RefernceError.
+        
+    </script>
+</body>
+</html>
