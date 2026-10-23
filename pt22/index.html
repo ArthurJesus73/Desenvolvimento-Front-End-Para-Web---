@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função tradicional e arrow funcition</title>
+</head>
+<body>
+    <script>
+        //função tradcicional: return devolve o resultado ao chamador.
+        function calcularArea(largura, altura) {
+            return largura * altura;
+        }
+        //Arrow function introduzida no ES6
+        const calcularPerimetro =(largura, altura)=>{
+            return 2 * (largura+altura);
+        }
+        let area=calcularArea(10,5);
+        let perimetro=calcularPerimetro(10,5);
+        console.log("Area: ", area); //50.
+        console.log("Perimetro: ",perimetro); //30.
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1: formulario conforme o modelo</title>
+    <style>
+        /*configurando pedida no slide da aula 5*/
+        body{font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 18px;}
+        form{border: 22px double red; width: 400px; padding: 30px;}
+        input[type="text"]{font-size: 18px; border: 1px solid black; width: 230px; background: yellow;}
+        /*Radios e botão mantem os tamnhos convencionais do navegador*/
+    </style>
+</head>
+<body>
+    <!--- ids são unicos. os radios compartilham o mesmo name --->
+    <form id="calculadora" name="calculadora">
+        <label for="valor1">valor 1:</label>
+        <input type="text" id="valor1" name="valor1"><br>
+        <label for="valor2">valor 2: </label>
+        <input type="text" id="valor2" name="valor2"><br>
+
+        <strong>opções</strong> <br>
+
+        <input type="radio" id="soma" name="operacao" value="soma"><label for="soma"> SOMA </label>
+        <input type="radio" id="subtracao" name="operacao" value="subtracao"><label
+        for="subtracao"> SUBSTRACAO </label>
+        <input type="radio" id="divisao" name="operacao" value="divisao"><label
+        for="divisao"> DIVISAO </label>
+        <label for="resultado"><strong>Resultado:</strong></label><br>
+        <input type="text" id="resultado" name="resultado" readonly><br>
+        <button type="button" id="calcular" name="calcular">Calcular</button>
+    </form>
+
+    <script>
+        //complemento: realiza a operação escolhida no formulario
+        document.getElementById("calcular").addEventListener("click",function () {
+            const texto1=document.getElementById("valor1").value.trim().replace(",",".");
+            const texto2=document.getElementById("valor2").value.trim().replace(",",".");
+            
+        }
+    </script>
+    
+</body>
+</html>
