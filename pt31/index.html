@@ -22,13 +22,11 @@
 
         <strong>opções</strong> <br>
 
-        <input type="radio" id="soma" name="operacao" value="soma"><label for="soma"> SOMA </label> <br>
+        <input type="radio" id="soma" name="operacao" value="soma"><label for="soma"> SOMA </label>
         <input type="radio" id="subtracao" name="operacao" value="subtracao"><label
-        for="subtracao"> SUBSTRACAO </label> <br>
-        <input type="radio" id="multiplicacao" name="operacao" value="multiplicacao"><label
-        for="multiplicacao"> MULTIPLICACAO </label> <br>
+        for="subtracao"> SUBSTRACAO </label>
         <input type="radio" id="divisao" name="operacao" value="divisao"><label
-        for="divisao"> DIVISAO </label> <br>
+        for="divisao"> DIVISAO </label>
         <label for="resultado"><strong>Resultado:</strong></label><br>
         <input type="text" id="resultado" name="resultado" readonly><br>
         <button type="button" id="calcular" name="calcular">Calcular</button>
@@ -39,28 +37,8 @@
         document.getElementById("calcular").addEventListener("click",function () {
             const texto1=document.getElementById("valor1").value.trim().replace(",",".");
             const texto2=document.getElementById("valor2").value.trim().replace(",",".");
-            const valor1=Number(texto1);
-            const valor2=Number(texto2);
-            const operacao = document.querySelector('input[name="operacao"]:checked');
             
-            let resultado;
-
-switch (operacao.value) {
-    case "soma":
-        resultado = valor1 + valor2;
-        break;
-    case "subtracao":
-        resultado = valor1 - valor2;
-        break;
-    case "multiplicacao": 
-        resultado = valor1 * valor2;
-        break;
-    case "divisao": 
-        resultado = valor1 / valor2;
-        break;
-}
-    document.getElementById("resultado").value = resultado;
-        });
+        }
     </script>
     
 </body>
